@@ -26,7 +26,8 @@
     "semantic-release": "^24.0.0",
     "sinon": "18.0.0",
     "ts-node": "^10.4.0",
-    "typescript": "5.5.3"
+    "typescript": "5.5.3",
+    "rimraf": "6.0.1"
   },
   "repository": {
     "type": "git",
@@ -47,7 +48,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf lib/* && tsc",
+    "build": "rimraf lib/* && tsc",
     "typecheck": "tsc --noEmit",
     "test": "mocha",
     "test-imports": "node test/imports/commonjs.js && node test/imports/esm.mjs && ts-node test/imports/typescript.ts",
