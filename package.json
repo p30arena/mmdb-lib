@@ -48,7 +48,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "rimraf lib/* && tsc",
+    "build": "rimraf lib && tsc",
     "typecheck": "tsc --noEmit",
     "test": "mocha",
     "test-imports": "node test/imports/commonjs.js && node test/imports/esm.mjs && ts-node test/imports/typescript.ts",
